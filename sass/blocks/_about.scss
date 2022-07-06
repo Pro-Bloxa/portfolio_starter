@@ -1,0 +1,65 @@
+.about {
+    margin-top: 120px;
+
+    &_wrap {
+        display: grid;
+        grid-template-columns: 400px auto;
+        gap: 70px;
+    }
+
+    &_foto {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &_block {
+        max-width: 570px;
+        padding-top: 6px;
+    }
+
+    &_subtitle {
+        position: relative;
+        @include circle-side;
+        padding-left: 10px;
+    }
+
+    &_title {
+        @include divider;
+    }
+
+    &_text {
+        margin-top: 20px;
+        @include text_fz14;
+    }
+
+    &_skills {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+        gap: 20px 50px;
+        margin-top: 40px;
+    }
+
+    &_skill {
+        display: grid;
+        grid-template-columns: 40px auto;
+        column-gap: 20px;
+
+        &__text {
+            @include text_fz12;
+        }
+
+        &__icon {
+            position: relative;
+            padding: 15px 0 0 15px;
+            @include circle-side;
+
+            &::before {
+                top: 0;
+            }
+        }
+    }
+}

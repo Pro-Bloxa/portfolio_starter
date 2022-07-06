@@ -1,0 +1,66 @@
+@mixin circle-side {
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        display: inline-block;
+        top: -25%;
+        left: 0;
+        height: 36px;
+        width: 36px;
+        border-radius: 100%;
+        background-color: $main-color;
+    }
+}
+
+@mixin circle-center {
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        display: inline-block;
+        top: -3px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 36px;
+        width: 36px;
+        border-radius: 100%;
+        background-color: $main-color;
+    }
+}
+
+@mixin text_fz14 {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    color: #000000;
+}
+
+@mixin text_fz12 {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #000000;
+}
+
+@mixin divider {
+    &::after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 60px;
+        background-color: $main-color;
+    }
+}
+
+@mixin divider_center {
+    &::after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 60px;
+        background-color: $main-color;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+}

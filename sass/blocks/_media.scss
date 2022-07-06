@@ -1,0 +1,259 @@
+@media (max-width: 1439px) {
+    .promo_socials {
+        display: none;
+    }
+}
+
+//======================================max-width: 1200px
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .about {
+        margin-top: 70px;
+
+        &_wrap {
+            gap: 50px;
+        }
+    }
+
+    .practice {
+        margin-top: 70px;
+
+        &_wrap {
+            column-gap: 50px;
+            padding-left: 30px;
+        }
+    }
+
+    .skills_programs {
+        grid-template-columns: repeat(auto-fit, 270px);
+        justify-content: space-between;
+    }
+
+    .skills_level {
+        margin-top: 70px;
+        grid-template-columns: repeat(auto-fit, 320px);
+        justify-content: space-between;
+    }
+
+    .portfolio {
+        margin-top: 70px;
+
+        &_wrap {
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-auto-rows: 280px;
+            gap: 20px;
+            justify-content: center;
+
+            .vertical_1,
+            .horizontal_1 {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+
+    .price {
+        &_wrap {
+            grid-template-columns: repeat(2, 380px);
+        }
+    }
+
+    .contacts {
+        padding: 70px 0 70px 0;
+    }
+}
+
+//======================================max-width: 992px
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .promo {
+        background-image: url('../img/main_bg_min.jpg');
+    }
+
+    .about {
+        &_wrap {
+            grid-template-columns: 300px auto;
+            gap: 40px;
+        }
+
+        &_skills {
+            grid-template: repeat(3, 1fr) / 1fr;
+        }
+    }
+
+    .title_fz48 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .title_fz36 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .promo_title {
+        width: 400px;
+    }
+
+    .practice_wrap {
+        grid-template-columns: repeat(2, 315px);
+
+    }
+
+    .skills {
+        margin-top: 70px;
+    }
+
+    .price {
+        &_wrap {
+            grid-template-columns: repeat(2, 320px);
+            column-gap: 45px;
+        }
+    }
+
+    .contacts {
+        &_wrap {
+            grid-template-columns: 300px auto;
+            gap: 30px;
+        }
+
+        &_form {
+            gap: 25px 20px;
+        }
+
+        &_triggers {
+            column-gap: 20px;
+        }
+
+        &_policy {
+            font-size: 10px;
+        }
+    }
+}
+
+//======================================max-width: 768px
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .title_fz36 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .about_wrap {
+        grid-template-columns: auto;
+        gap: 40px;
+    }
+
+    .practice_wrap {
+        grid-template-columns: repeat(2, 250px);
+        column-gap: 30px;
+        padding-left: 0;
+
+    }
+
+    .skills {
+        &_programs {
+            justify-content: center;
+        }
+
+        &_level {
+            justify-content: center;
+
+            &__competence {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .price {
+        &_wrap {
+            grid-template-columns: repeat(1, 400px);
+            justify-content: center;
+        }
+
+        &_items {
+            padding-left: 25px;
+        }
+    }
+
+    .contacts {
+        &_foto {
+            display: none;
+        }
+
+        &_wrap {
+            grid-template-columns: 100%;
+        }
+
+    }
+}
+
+
+//======================================max-width: 576px
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .hamburger {
+        right: 20px;
+    }
+
+    .title_fz48 {
+        font-size: 26px;
+        line-height: 39px;
+    }
+
+    .promo_title {
+        width: 300px;
+    }
+
+    .title_fz36 {
+        font-size: 24px;
+    }
+
+    .practice_wrap {
+        grid-template-columns: auto;
+    }
+
+    .price {
+        &_wrap {
+            grid-template-columns: repeat(1, 100%);
+            justify-content: center;
+        }
+    }
+
+    .contacts {
+        &_form {
+            grid-template: unset;
+        }
+
+        &_textarea {
+            grid-column: unset;
+        }
+
+        &_triggers {
+            grid-column: unset;
+            grid-template-columns: 1fr;
+        }
+
+        &_policy {
+            margin-top: 15px;
+        }
+    }
+
+}

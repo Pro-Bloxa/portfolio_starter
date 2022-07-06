@@ -1,0 +1,121 @@
+.practice {
+    position: relative;
+    margin-top: 120px;
+
+
+    &_subtitle {
+        text-align: center;
+        @include circle-center;
+    }
+
+    &_title {
+        margin-top: 6px;
+        text-align: center;
+        @include circle-center;
+        @include divider_center;
+    }
+
+    &_wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 136px;
+        margin-top: 60px;
+        padding-left: 65px;
+    }
+
+    &_block {
+
+        max-width: 490px;
+        padding-left: 50px;
+
+        &__title {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 8px;
+                left: -50px;
+                height: 15px;
+                width: 15px;
+                background-color: $main-color;
+                border-radius: 100%;
+            }
+        }
+    }
+
+    &_items {
+        margin-top: 45px;
+        padding-left: 0;
+    }
+
+    &_item {
+        position: relative;
+        list-style-type: none;
+
+        &:nth-child(n+2) {
+            margin-top: 45px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -52px;
+            left: -43px;
+            height: calc(100% + 52px);
+            width: 1px;
+            background-color: #000000;
+        }
+
+        &__block {
+            position: relative;
+            padding-left: 55px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 20px;
+                left: -43px;
+                height: 1px;
+                width: 43px;
+                background-color: #000000;
+            }
+        }
+
+        &__icon {
+            position: absolute;
+            top: 3px;
+            left: 0;
+            @include circle-side;
+
+            img {
+                position: absolute;
+                left: 17px;
+                top: 14px;
+            }
+        }
+
+        &__title {
+            margin-bottom: 0;
+        }
+
+        &__subtitle {
+            margin-top: 0;
+            @include text_fz12;
+        }
+
+        &__text {
+            margin-top: 12px;
+            margin-bottom: 0;
+            @include text_fz12;
+        }
+
+        &__lists {
+            @include text_fz12;
+        }
+
+        &__list {
+            margin-top: 4px;
+        }
+    }
+}
